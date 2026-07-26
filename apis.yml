@@ -1,8 +1,30 @@
 aid: europass
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/europass.png
 name: Europass
-description: 'Europass is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Financial Services. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  EuroPass is a Paris-based digital agency founded in 2016 that specializes in
+  Chinese outbound tourism, describing itself as the European leader in
+  implementing Chinese digital solutions for destinations, retailers,
+  transportation, attractions, and hospitality brands. Its services span Chinese
+  social-media management (notably WeChat and Weibo), WeChat mini-programs and
+  stores, e-commerce, digital ticketing, destination marketing, and mobile
+  payment acceptance via WeChat Pay and Alipay so European businesses can serve
+  and transact with Chinese travelers. EuroPass operates as a services and
+  marketing company rather than a developer platform: it publishes no public
+  API, developer portal, SDKs, or technical documentation. This profile was
+  surfaced as a portfolio company of Partech and enriched with the identity and
+  domain-security data available from its public web presence.
 url: https://raw.githubusercontent.com/api-evangelist/europass/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +34,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Financial Services
+- Digital Agency
+- Chinese Tourism
+- Mobile Payments
+- WeChat
+- E-Commerce
+- Destination Marketing
+- Travel Technology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +51,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/europass-domain-security.yml
 - type: Website
   url: https://europasschina.com/
+- type: Blog
+  url: https://europasschina.com/blog-homepage/
+- type: Support
+  url: https://europasschina.com/contact/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
